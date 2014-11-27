@@ -1,0 +1,17 @@
+{
+  "name": "pc",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.14",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "zeptojs": "~1.1.4",
+    "Backbone.localStorage": "~1.1.13"
+  },
+  "devDependencies": {
+    "requirejs-text": "~2.0.12",
+    "iscroll": "~5.1.2",
+    "zepto-cookie": "*",
+    "query-string": "~1.0.0"
+  }
+}
