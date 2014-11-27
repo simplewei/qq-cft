@@ -1,0 +1,42 @@
+#wrapper { position: absolute; width: 100%; top: 0; bottom: 0; overflow: hidden;}
+.container { position: absolute; width: 100%; }
+
+/* header */
+header p{padding: 10px 15px 0 15px;line-height: 24px;font-size: 13px;color: #666666;}
+header p .selected {color: #2DA63D}
+/* index.shtml */
+.title { padding: 29px 0 5px 15px; line-height: 24px; font-size: 13px; color: #666666; }
+.mlines { font-size: 16px; }
+
+/* apply-mbcode.shtml */
+.apply-mbcode .title { padding: 28px 15px 5px 15px; line-height: 22px; font-size: 14px; color: #666666; }
+.apply-mbcode .form-line { border-top: 1px solid #DEDEDE; }
+.apply-mbcode .form-line .text { font-size: 15px; padding-left: 13px; }
+.apply-mbcode .btn-resend { position: absolute; right: 15px; top: 50%; margin-top: -15px; width: 100px; height: 30px; line-height: 30px; text-align: center; color: #FFFFFF; background-color: #DADADA; border-radius: 5px; font-size: 12px; overflow: hidden;}
+
+/* apply-receipt.shtml */
+.apply-receipt { padding-top: 26px; }
+.apply-receipt .mlines .lab { width: 95px; }
+.apply-receipt .container { padding-top: 26px; }
+.apply-receipt .title { padding: 17px 0 8px 13px; color: #666666; font-size: 13px; }
+.apply-receipt .area-form-line:after { position: absolute; content: ''; right: 16px; top: 50%; margin-top: -8px; }
+.apply-receipt .checkbox-line { padding: 11px 0 0 15px; font-size: 14px; height: 25px; line-height: 25px; color: #666666; }
+.apply-receipt .invoice-tips { padding:; background-color: #FFF; border-top: 1px solid #DEDFE0; border-bottom: 1px solid #DEDFE0; }
+.apply-receipt .invoice-tips-line { padding: 9px 0; line-height: 20px; font-size: 12px; color: #A6A6A6; }
+.apply-receipt .arealist, .show-area-list .form { display: none; }
+.show-area-list .container { padding-top: 0; }
+.show-area-list .arealist { display: block; background-color: #FFF; }
+.apply-receipt .arealist ul { border-top: 1px solid #DEDFE0; border-bottom: 1px solid #DEDFE0; padding-left: 15px; }
+.apply-receipt .arealist .li { border-top: 1px solid #DEDFE0; }
+.apply-receipt .arealist .li:first-child { border-top: 0 none; }
+.apply-receipt .arealist .li-a { position: relative; display: block; height: 43px; line-height: 42px; color: #000; padding: 0 1px; }
+
+/* apply-ok.shtml */
+.apply-ok { text-align: center; padding-top: 20% }
+
+/* .apply-ok .container { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+*/
+.apply-ok .title { font-size: 18px; padding: 22px 0; color: #22B14C;}
+.apply-ok .desc { line-height: 19px; padding: 0 0 9px; font-size: 13px; color: #666666; text-align: left; border-bottom: 1px solid #DFDFDF; margin: 0 23px; }
+.apply-ok .line{display:inline-block;padding-bottom: 8px;}
+.apply-ok .desc2 { line-height: 19px; font-size: 13px; color: #969696; text-align: left; margin: 10px 23px 0; }

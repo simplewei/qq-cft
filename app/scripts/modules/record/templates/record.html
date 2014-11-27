@@ -1,0 +1,30 @@
+<% 
+  order_states = ['创建订单','提交订单成功','提交订单失败','审核中','已审核','受理驳回','代付款','付款成功','付款失败'];
+  order_type = ['个人退税','授权退税'];
+%>
+
+<div class="my-records">
+  <div class="record-list">
+    <!--
+    交互说明：
+    1. 提交申请给.status加class "green"
+    2. 受理完成给.status加class "blue"
+    -->
+    <ul>
+      <% _.each(bill, function(_bi){ %>
+      <li class="list-li">
+        <div class="bill-line">
+          <span class="bill">申请单号：<%- _bi.id %></span>
+          <span class="status"><%= order_states[_bi.state] %></span>
+        </div>
+        <div class="detail-line" _id="<%- _bi.id %>">
+          <p class="title"><%= order_type[_bi.type] %></p>
+          <p class="date"><%- _bi.create_time %> 申请</p>
+        </div>
+      </li>
+      <% }) %>
+      
+    </ul>
+    <a href="javascript:" class="record-cnt-more"><span class="ico-loading-16"></span>更多</a>
+  </div>
+</div>

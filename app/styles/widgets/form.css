@@ -1,0 +1,23 @@
+/*  form  */
+.form-line{position:relative;height:42px;line-height:42px;background-color:#FFFFFF;border-bottom:1px solid #DEDFE0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.form .lab{display:block;color:#000000;width:122px;padding-left:15px;}
+.form-line .text{display:block;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;height:20px;line-height:20px;padding:11px 0;font-size:16px;-webkit-appearance:none;border:0 none;color:#000;}
+.ico-clear{display:none;position:absolute;right:0;top:50%;margin-top:-22px;width:17px;height:17px;padding:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAA/FBMVEUAAADDxbvQ0cfCw7vt7uTExbz19uvY2tDx8uns7uOxsqnFxrzLzMS8vbbh49fZ3NK7vLTi49vLzMS0tqrNz8K2t6/DxLzi49vCw7ns7eLp6uPf4Nn3+Ore39a9vrXJyr+9v7O/wLi7vLTa2tPP0Mjk5d3i49vNzsb19u7s7ObBwrjJysLg4dmwsamztKyur6etrqaqq6OpqqKsraX///////qrrKSnqJ/Awbn+/ve3uLDCw7vu7+elpp7y8uva29Lm59/s7ebc3dT5+vL///y7vLTW187Gx77Oz8fg4dn29++jpJyxsqqwsamxsqqxsqqxsqqxsqnJysKys6tVysH3AAAALXRSTlMAqWvRL7kHhh0i5JKbu1Jy8lim0LvZ6zjmSChyBGL8xNzW55ioPz+LERG5z131tYrZAAAB8ElEQVQ4y8XTx3LbMBQFUPUuWXK3Y4/T6zw+FBIsKhQlURWbDP7/XwIQZCLFzi4zvtSKOrwA34Cl10hr0K2/61z1v4xa/xCfP7x3HAXKiW57n14C9z0kVAgCiJzRqHf/TIyGDBHsD0Cr4egv8cZhCDZow9TZiXh0BJocG6oej0QtpXoFQgqFnAMQP639Fg9PYP5RMkMgAZU0j7Cnh4IMKICkQTIfM20ksE0yj7heCge5aFxqAixw3UnAiCQ8mLhewHQPrzcsuUOi64lahMYIOp654S4SZlvyzpKmyvZJZOxpczAdsdmTvpymJWXI3xLX4SqJZ6swlhQzJMuWXPwspoXrped5y1iy/A5cWNIBLAxdhGG4Ax/zqI4lb4sWMt1M9p6XBJTkJerKkktLgE83S3efhO5sLDBv7lvSBdvBgpnnzaOF584C397CriWVfCOb5TKcS6b0uycpz2YFFUvat9yIdB96O0klhdj0UATg1+1SPjtT64/d1dzxQSJVC9fdUgLS15PLa6RZV23XDs3OnXC260ivJKL2nzOH5rxMDzx/D+4fhJ42PTp3jbqdxEkI+944/oKqgtvhmMsK+qN1+pXVCT/toP1CFPnaxAPFPMAPTvNb6VluzlPBiYnwnY83pRdTq5Sr1+mwen5WK/33/AJqBYBN/kD+dgAAAABJRU5ErkJggg==) center center no-repeat;background-size:17px 17px;}
+.form-select{position:relative;display:block;height:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+.form-select select{display:block;height:100%;width:100%;-webkit-appearance:none;border:0 none;font-size:16px;background: #FFFFFF;}
+.show-clear .ico-clear{display:block;}
+.show-clear .ico-card, .show-clear .ico-account{display:none;}
+
+.mlines{padding-left:16px;background-color:#FFFFFF;border-top:1px solid #DEDFE0;border-bottom:1px solid #DEDFE0;}
+.mlines .form-line:last-child{border-bottom:0 none;}
+.mlines .lab{padding-left:1px;}
+.ico-white-arrow-right,.arrow-right-line:after, .apply-receipt .arealist .li-a:after{display: inline-block;width: 10px;height: 17px;background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiBAMAAACthOSOAAAAA3NCSVQICAjb4U/gAAAALVBMVEX///+oqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKjBVupSAAAAD3RSTlMAESIzRFVmiJmqu8zd7v8LcbuUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAIxJREFUGJVjYJCcwAAFzPtewpix794VQJnv3r17DmX2AdkJECY7kPkMKlwHZAdAmBxA5lMk1Q4I4StQ4XXv3r1VgDAlgcKHoMLz3r17IwBhcgGFN0KYjPvevXsNVSENFF6AMOQVBhOhAEkbkmEIK5AsRjgHyZEIpyN5COFNJM8jBQlSQCEFH1KgIoIaAASEbr/+h3b/AAAAAElFTkSuQmCC") 0 0 no-repeat;webkit-background-size: 10px 17px;background-size: 10px 17px;}
+.arrow-right-line .text, .form-select select{white-space:nowrap;padding-right:28px;overflow:hidden;text-overflow:ellipsis;}
+.arrow-right-line:after, .apply-receipt .arealist .li-a:after{content:'';position:absolute;right:15px;top:50%;margin-top:-8px;}
+
+/*  global  */
+.checkbox, .passport-manage .ico{background:url(/images/taxrefund.png);background-size:51px auto;}
+.checkbox{display:inline-block;width:25px;height:25px;background-position:0 0;vertical-align:top;margin-right:9px;}
+.checkbox.on{background-position:-26px 0;}
+.textarea-form-line{height:60px;}
+.textarea-form-line .text{height:40px;padding:10px 10px 0 0;margin-right:5px;font-size:14px;}

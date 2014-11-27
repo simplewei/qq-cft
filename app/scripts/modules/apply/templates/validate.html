@@ -1,0 +1,18 @@
+<div class="apply-mbcode">
+	<p class="title">
+		请确认手机号码，我们将发送验证码短信到这个号码:
+		<span><%- mobile.replace(mobile.substr(3,4),'****') %></span></p>
+	<div class="form-line">
+		<input type="text" class="text" id="verify_code" placeholder="输入验证码">
+		<a href="javascript:;" class="btn-resend"><span class="seconds">59</span>秒后重新发送</a>
+	</div>
+	
+	<div class="btn-line">
+		<a href="javascript:;" class="btn-green submit">确认信息</a>
+	</div>
+
+</div>
+<%
+	document.title = '确认手机号' 
+
+%>

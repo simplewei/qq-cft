@@ -1,0 +1,54 @@
+<% var Countries = ['中国'] %>
+<div class="passport-add">
+	<form action="" class="form">
+		<div class="mlines country-mlines">
+			<div class="form-line arrow-right-line">
+				<div class="lab">国家</div>
+				<div class="form-select arrow-right-line">
+					<select class="" name="nation" id="">
+						<% _.each(Countries, function(country){ %>
+							<option <%- nation== country? 'selected': '' %> value="<%- country %>"><%- country %></option>
+						<% }) %>
+						<!-- <option selected value="港澳通行证">港澳通行证</option>
+						<option selected value="台胞证">台胞证</option> -->
+					</select>
+				</div>
+			</div>
+			<div class="form-line num-form-line">
+				<div class="lab">护照号码</div>
+				<input name="no" type="text" class="text" placeholder="请输入护照号码 PassPort No" value="<%-no%>">
+			</div>
+		</div>
+		<p class="title">请填写你的英文名字</p>
+		<div class="mlines">
+			<div class="form-line">
+				<div class="lab">名/First Name</div>
+				<input name="first_name_en" type="text" class="text" placeholder="请填写First Name" value="<%-first_name_en%>">
+			</div>
+			<div class="form-line">
+				<div class="lab">姓/Last Name</div>
+				<input name="last_name_en" type="text" class="text" placeholder="请填写Last Name" value="<%-last_name_en%>" >
+			</div>
+		</div>
+		<p class="title">请填写你的中文名字</p>
+		<div class="mlines">
+			<div class="form-line">
+				<div class="lab">名</div>
+				<input name="first_name_cn" type="text" class="text" placeholder="请填写你的名字" value="<%-first_name_cn%>">
+			</div>
+			<div class="form-line">
+				<div class="lab">姓</div>
+				<input name="last_name_cn" type="text" class="text" placeholder="请填写你的姓" value="<%-last_name_cn%>">
+			</div>
+		</div>
+		<div class="checkbox-line">
+			<!-- <label for=""><input class="hide" type="checkbox" checked=""><span class="checkbox on"></span>保存为常用退税人</label> --><!-- 选中给.checkbox加class"on" -->
+		</div>
+		<div class="btn-line">
+			<a href="javascript:" class="btn-green submit">保存</a>
+			<% if(typeof id !== 'undefined'){ %>
+				<a href="javascript:" class="btn-red delete">删除</a>
+			<% } %>
+		</div>
+	</form>
+</div>

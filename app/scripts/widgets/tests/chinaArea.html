@@ -1,0 +1,37 @@
+<!doctype html />
+<html>
+<head>
+    <title>test</title>
+    <script type="text/javascript" src="../chinaArea.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            chinaArea.init("selProvince1", "selCity1", "selDistrict1");
+            chinaArea.init("selProvince2", "selCity2", "selDistrict2");
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <select id="selProvince1">
+        </select>
+        <label>省</label>
+        <select id="selCity1">
+        </select>
+        <label>市</label>
+        <select id="selDistrict1">
+        </select>
+        <label>区/县</label>
+    </div>
+    <div>
+        <select id="selProvince2">
+        </select>
+        <label>省</label>
+        <select id="selCity2">
+        </select>
+        <label>市</label>
+        <select id="selDistrict2">
+        </select>
+        <label>区/县</label>
+    </div>
+</body>
+</html>

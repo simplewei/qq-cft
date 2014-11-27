@@ -1,0 +1,80 @@
+<!-- 申请人信息 -->
+<div class="my-infomation">
+<form action="" class="form">
+	<div class="mlines">
+		<div class="form-line">
+			<div class="lab">姓名</div>
+			<div class="text"><%- user.name||'' %></div>
+		</div>
+		<div class="form-line">
+			<div class="lab">证件类型</div>
+			<div class="text">
+				<% if(user.cre_type == 0){ %>
+				身份证
+				<% }else if(user.cre_type === 1){ %>
+				护照
+				<% }else if(user.cre_type === 2){ %>
+				港澳通行证
+				<% }else if(user.cre_type === 3){ %>
+				台胞证
+				<% } %>
+			</div>
+		</div>
+		<div class="form-line num-form-line">
+			<div class="lab">身份证号码</div>
+			<div class="text"><%- user.cre_id %></div>
+		</div>
+	</div>
+	<div class="mlines">
+		<div class="form-line">
+			<div class="lab">性别</div>
+			<div class="form-select arrow-right-line">
+				<select name="sex">
+					<option value="0" <%- user.sex?'':'selected' %> >男</option>
+					<option value="1" <%- user.sex?'selected':'' %> >女</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-line birth-form-line show-clear"><!-- 表单输入内容后，添加class:show-clear 可显示清除按钮 -->
+		<div class="lab">生日</div>
+		<input id="birthday" type="number" class="text" name="birthday" value="<%- user.birthday %>" placeholder="请输入月年 例如 1990-11-07">
+		<a href="javascript:" class="ico-clear"></a>
+	</div>
+</div>
+<div class="mlines">
+	<div class="form-line show-clear">
+		<div class="lab">手机号码</div>
+		<div class="text"><%- user.mobile %></div>
+	</div>
+	<div class="form-line"><!-- 表单输入内容后，添加class:show-clear 可显示清除按钮 -->
+	<div class="lab">电子邮箱</div>
+	<input id="email" type="email" class="text" name="email" placeholder="请输入你的电子邮箱" value="<%- user.email||'' %>">
+	<a href="javascript:" class="ico-clear"></a>
+</div>
+</div>
+<div class="mlines">
+	<div class="form-line textarea-form-line">
+		<div class="lab">地址</div>
+		<textarea name="addr" type="text" class="text address-line" placeholder="请添加上门取单地址"><%- user.addr %></textarea>
+	</div>
+</div>
+<div class="btn-line">
+<a href="javascript:" class="btn-green submit">保存</a>
+</div>
+</form>
+</div>
+
+<%
+
+	$('.container').on('keyup', '#birthday, #email', function(){
+	if(this.value == ''){
+		$(this).parent().removeClass('show-clear');
+	}else{
+		$(this).parent().addClass('show-clear');
+	}
+	});
+	$('.container').on('click', '.ico-clear', function(){
+		$(this).prev().val('').parent().removeClass('show-clear');
+	});
+
+%>

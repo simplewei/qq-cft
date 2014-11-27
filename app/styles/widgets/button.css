@@ -1,0 +1,12 @@
+/* 按钮[[ */
+.btn-line{padding:30px 15px 10px;}
+.btn-green,.btn-white{display:block;height:43px;line-height:43px;text-align:center;border-radius:4px;font-size:18px;}
+.btn-green-s,.btn-white-s{height:38px;line-height:38px;text-align:center;width:78px;font-size:16px;border-radius:4px;}
+.btn-green,.btn-green-s{color:#FFFFFF;background-color: #3BBB49;-webkit-box-shadow: inset 0 0 1px rgba(255,255,190,.75);box-shadow: inset 0 0 1px rgba(255,255,190,.75);border: solid 1px #38A843;background-image:-webkit-gradient(linear, left top, left bottom, from(#46CC53), to(#2DA63D));background-image: linear-gradient(to bottom, #46CC53, #2DA63D);}
+.btn-green.btn-on,.btn-green-s.btn-on{background-image:-webkit-gradient(linear, left top, left bottom, from(#2DA63D), to(#46CC53));background-image: linear-gradient(to bottom, #2DA63D, #46CC53);}
+.btn-white,.btn-white-s{color:#666666;background-color: #FBFBFB;-webkit-box-shadow: inset 0 0 0 1px #FFFFFF;box-shadow: inset 0 0 0 1px #FFFFFF;border: solid 1px #b2b2b2;background-image:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEEEEE));background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);}
+.btn-white.btn-on,.btn-white-s.btn-on{background-image:-webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#FFFFFF));background-image: linear-gradient(to bottom, #EEEEEE, #FFFFFF);}
+.btn-disable{border-color:#737373!important;color:#FFFFFF!important;background-color:#A5A5A5!important;-webkit-box-shadow:none!important;box-shadow:none!important;background-image:-webkit-gradient(linear, left top, left bottom, from(#A5A5A5), to(#8E8E8E))!important;opacity:0.5!important;background-image: linear-gradient(to bottom, #A5A5A5, #8E8E8E)!important;-webkit-tap-highlight-color:rgba(0,0,0,0);}/* 在任何按钮上添加class:btn-disable可使其变灰 */
+.btn-disable-light{color:rgba(255,255,255,0.6);}
+.btn-transparent{border: 1px solid #BBBBBB;color: #666666;display: block;height: 43px;line-height: 43px;text-align: center;border-radius: 4px;font-size: 18px;}
+.btn-red{display:block;height:42px;line-height:42px;text-align:center;border-radius:4px;font-size:18px;color:#FFFFFF;background-color: #DD4B39;-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.15);box-shadow: 1px 1px 2px rgba(0,0,0,.15);border:solid 1px #B0281A;background-image:-webkit-gradient(linear, left top, left bottom, from(#DD4B39), to(#C53727));} .btn-red.btn-on{background-image: -webkit-gradient(linear, left top, left bottom, from(#C53727), to(#DD4B39));}

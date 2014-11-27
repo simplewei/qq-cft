@@ -1,0 +1,22 @@
+#wrapper { position: absolute; width: 100%; top: 0; bottom: 0; }
+.container { position: absolute; width: 100%; }
+
+/* index.shtml */
+.title { padding: 29px 0 5px 15px; line-height: 24px; font-size: 13px; color: #666666; }
+.mlines { font-size: 16px; }
+
+/* apply-mbcode.shtml */
+.apply-mbcode .title { padding: 28px 15px 5px 15px; line-height: 22px; font-size: 14px; color: #666666; }
+.apply-mbcode .form-line { border-top: 1px solid #DEDEDE; }
+.apply-mbcode .form-line .text { font-size: 15px; padding-left: 13px; }
+.apply-mbcode .btn-resend { position: absolute; right: 15px; top: 50%; margin-top: -15px; width: 100px; height: 30px; line-height: 30px; text-align: center; color: #FFFFFF; background-color: #DADADA; border-radius: 5px; font-size: 12px;  overflow: hidden;}
+
+
+/*  
+my-infomation.shtml
+*/
+.my-infomation .lab{width:95px;}
+.my-infomation .form{padding-top:20px;}
+.my-infomation .mlines{margin-bottom:10px;}
+.my-infomation .birth-form-line .text{font-size:12px;}
+.my-infomation .btn-line{padding-top:20px;}

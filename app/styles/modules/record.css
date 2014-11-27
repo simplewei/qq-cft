@@ -1,0 +1,46 @@
+#wrapper{position: absolute;width: 100%;top: 0;bottom: 0;}
+.container{position: absolute;width: 100%;}
+/*
+my-record-track
+*/
+.my-record-track .record{position:relative;padding:20px 15px 0 60px;}
+.my-record-track .record:before{position:absolute;left:32px;top:31px;bottom:40px;content:'';width:2px;background-color:#C4CACF;}
+.my-record-track .li{position:relative;margin-bottom:18px;background-color:#FFF;border:1px solid #E0E0E0;border-radius:4px;padding:13px 0 12px 14px;font-size:15px;}
+.my-record-track .li:before{position:absolute;left:-11px;top:8px;content:'';border-width:5px;border-color:transparent #E0E0E0 transparent transparent;border-style:solid;}
+.my-record-track .li:after{position:absolute;left:-8px;top:9px;content:'';border-width:4px;border-color:transparent #FFFFFF transparent transparent;border-style:solid;}
+.my-record-track .date{color:#666666;font-size:12px;padding-top:3px;}
+.my-record-track .ico-circle{position:absolute;left:-38px;top:4px;width:22px;height:22px;background-color:#F8F9FA;border-radius:11px;}
+.my-record-track .ico-circle:before{position:absolute;left:2px;top:2px;content:'';width:18px;height:18px;background-color:#C4CACF;border-radius:9px;}
+.my-record-track .ico-circle:after{position:absolute;left:4px;top:4px;content:'';width:14px;height:14px;background-color:#F8F9FA;border-radius:7px;}
+
+/*
+my-records.shtml
+*/
+.my-records .record-list{padding-top:35px;}
+.my-records .list-li{padding-left:16px;border-top:1px solid #DEDFE0;border-bottom:1px solid #DEDFE0;background-color:#FFF;margin-bottom:15px;}
+.my-records .bill-line{height:43px;line-height:42px;padding:0 1px;font-size:15px;color:#999999;border-bottom:1px solid #DEDFE0;}
+.my-records .bill-line .bill{float:left;}
+.my-records .bill-line .status{padding-right:16px;float:right;color:#393939;}
+.my-records .bill-line .green{color:#00C500;}
+.my-records .bill-line .blue{color:#4A8BDA;}
+.my-records .detail-line{position:relative;padding:0 0 14px 1px;}
+.my-records .detail-line:after{position:absolute;content:'';right:16px;top:50%;margin-top:-8px;}
+.my-records .detail-line .title{padding:15px 0 6px 0;font-size:16px;}
+.my-records .detail-line .date{font-size:15px;color:#A6A6A6;}
+.my-records .record-cnt-more{display:none;padding:0 20px 10px;text-align:center;position:relative;color:#333333;}
+.ico-loading-16{display:inline-block;width:16px;height:16px;background:url(https://img.tenpay.com/v2/res/hybrid/img/www/global/loading_16.gif) 0 0 no-repeat;-webkit-background-size:16px 16px;background-size:16px 16px;margin-right:8px;vertical-align:top;}
+
+/*
+my-record-detail.shtml
+*/
+.my-record-detail .bill-detail{padding:14px 15px;font-size:14px;line-height:26px;}
+.my-record-detail .account-detail{padding-top:7px;font-size:14px;line-height:30px;border-top:1px solid #DEDFE0;}
+.my-record-detail .state{position:absolute;right:16px;top:14px;color:#15B23E;}
+.my-record-detail .line{height:30px;padding:0 15px;color:#000000;}
+.my-record-detail .line .text{display:block;padding-left:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right;}
+.my-record-detail .line .tit{color:#8C8C8C;width:70px;float:left;}
+.my-record-detail .passport-line{margin-top:8px;height:48px;line-height:48px;border-top:1px solid #DEDFE0;border-bottom:1px solid #DEDFE0;margin-left:15px;padding-left:1px;}
+.my-record-detail .passport-line .text{font-size:11px;}
+.my-record-detail .btn-green{margin-bottom:15px;}
+
+.no-record{text-align: center;padding-top: 20px;color: #666666;}

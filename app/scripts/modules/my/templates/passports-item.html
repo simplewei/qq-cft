@@ -1,0 +1,9 @@
+<a href="javascript:;" class="ico ico-edit"></a>
+<!-- 按压给.ico-edit加class "press" -->
+<p class="main-title"><%- nation+ ' '+ no %></p>
+<p class="sub-title"><%- first_name_en+' '+last_name_en %></p>
+<% if(type==1) { %>
+<label class="checkbox <%= ((typeof done!='undefined') && done)? 'on': ''%>" for="">
+	<input class="hide" type="checkbox" checked="">
+</label>
+<% }%>

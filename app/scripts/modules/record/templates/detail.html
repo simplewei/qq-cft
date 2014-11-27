@@ -1,0 +1,40 @@
+<% 
+  order_states = ['创建订单','提交订单成功','提交订单失败','审核中','已审核','受理驳回','代付款','付款成功','付款失败','用户取消'];
+  order_type = ['个人退税','授权退税'];
+%>
+
+<div class="my-record-detail">
+	<div class="container">
+		<div class="bill-detail">
+			<div class="tit">申请单号：<%- bill[0]['id'] %></div>
+			<div class="tit">退税类型：<%= order_type[bill[0]['type']] %></div>
+			<div class="tit">申请日期：<%- bill[0]['create_time'] %></div>
+			
+			<div class="state">状态：<span><%= order_states[bill[0]['state']] %></span></div>
+		</div>
+		<div class="account-detail">
+			<div class="line">
+				<span class="tit">申请人</span><span class="text"><%= user.name %></span>
+			</div>
+			<div class="line">
+				<span class="tit">联系电话</span><span class="text"><%= user.mobile %></span>
+			</div>
+			<div class="line">
+				<span class="tit">通讯地址</span><span class="text"><%= bill[0]['deliver']['addr'] %></span>
+			</div>
+			<div class="line passport-line">
+				<span class="tit">退税人护照</span>
+				<span class="text">
+					<% _.each(bill[0]['passport'], function(p){%>
+						<%- p.nation + '-' + p.last_name_cn + p.first_name_cn+' ' %>
+					<% }) %>
+				</span>
+			</div>
+		</div>
+		<div class="btn-line">
+			<% if(bill[0]['state'] == 5 ){ %>
+			<a href="javascript:" class="btn-white cancel">取消提交</a>
+			<% } %>
+		</div>
+	</div>
+</div>

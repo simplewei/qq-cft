@@ -1,0 +1,14 @@
+/*
+guide.shtml
+*/
+.guide{background:#f8f9fa;}
+.guide .title{line-height: 60px; padding: 10px 0 0 15px; color: #666; font-size: 13px;}
+.guide .wrapper{margin-left: 44px; margin-bottom: 65px;border-left: 2px solid #e3e3e3; position: relative; height: 255px;}
+.guide .list{position: absolute;top: 0; left: -31px;}
+.guide .list li{height: 60px; line-height: 60px;padding-bottom: 25px;}
+.guide .txt{float: left; line-height: 60px; padding-left: 10px; font-size: 15px;}
+.guide .guide-1,.guide .guide-2,.guide .guide-3,.guide .guide-4{background: url("/images/guide.png") no-repeat; width: 60px; height: 60px; display: inline-block;float: left;}
+.guide .guide-1{background-position: 0 0;}
+.guide .guide-2{background-position: 0 -61px;}
+.guide .guide-3{background-position: 0 -122px;}
+.guide .guide-4{background-position: 0 -182px;}

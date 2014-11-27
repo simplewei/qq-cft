@@ -1,0 +1,52 @@
+<div class="userInfo">
+	<p class="title">请预留你的个人信息，下次退税时无需重新填写</p>
+	<form action="" class="form">
+		<div class="mlines">
+			<div class="form-line"><!-- 表单输入内容后，添加class:show-clear 可显示清除按钮 -->
+			<div class="lab">申请人姓名</div>
+			<input id="user-name" name="name" type="text" class="text" placeholder="输入你的姓名" />
+			<a href="javascript:" class="ico-clear"></a>
+		</div>
+		<div class="form-line">
+			<div class="lab">手机号码</div><!-- 表单输入内容后，添加class:show-clear 可显示清除按钮 -->
+			<input id="user-tel" name="mobile" type="text" class="text" placeholder="输入你的手机号码" />
+			<a href="javascript:" class="ico-clear"></a>
+		</div>
+		<div class="form-line">
+			<div class="lab">证件类型</div>
+			<div class="form-select arrow-right-line">
+				<select class="cre_type" name="cre_type" id="">
+					<option selected value=0>身份证</option>
+					<option value=1>护照</option>
+					<!-- <option selected value="港澳通行证">港澳通行证</option>
+					<option selected value="台胞证">台胞证</option> -->
+				</select>
+			</div>
+		</div>
+		<div class="form-line"><!-- 表单输入内容后，添加class:show-clear 可显示清除按钮 -->
+		<div class="lab">证件号码</div>
+		<input id="user-id" name="cre_id" type="text" class="text" placeholder="输入你的证件号码" />
+		<a href="javascript:" class="ico-clear"></a>
+	</div>
+</div>
+<div class="btn-line">
+	<a href="javascript:" class="submit btn-green">保存并下一步</a>
+</div>
+</form>
+</div>
+
+<%
+
+	$('.container').on('keyup', '#user-name, #user-tel, #user-id', function(){
+		if(this.value == ''){
+			$(this).parent().removeClass('show-clear');
+		}else{
+			$(this).parent().addClass('show-clear');
+		}
+	}).on('click', '.ico-clear', function(){
+		$(this).prev().val('').parent().removeClass('show-clear');
+	}).on('change', '.cre_type', function(){
+		$('#user-id').val('');
+	})
+
+%>
