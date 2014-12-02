@@ -1,4 +1,4 @@
-qq-cft
+cft-tuishui
 ======
 
 - 选择1个本地文件夹
