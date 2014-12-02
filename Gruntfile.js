@@ -79,7 +79,7 @@ module.exports = function (grunt) {
                   // 需反向代理路径
                   context: '/cgi-bin',
                   // 退税生产环境ip
-                  host: '10.133.41.107'
+                  host: '113.108.1.152'
               }
           ]
       },

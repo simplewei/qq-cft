@@ -13,9 +13,9 @@ qq-cft
 
 - 自定义zepto模块，并编译出目标文件
 
-	找到bower_components/zeptojs/make文件 第42行,添加deferred模块，结果如下：
+	找到bower_components/zeptojs/make文件 第42行,添加deferred、callbacks模块，结果如下：
 
-		modules = (env['MODULES'] || 'zepto event ajax form ie deferred').split(' ')
+		modules = (env['MODULES'] || 'zepto event ajax form ie deferred callbacks').split(' ')
 
 	然后在此目录下运行
 
@@ -25,3 +25,8 @@ qq-cft
 - 运行demo
 
 		grunt serve
+
+
+#Tips
+
+- 本demo使用iscroll，部分终端先后触发了touchend和mouseup，导致模拟事件click/tap被触发2次，通过设置iscroll参数，屏蔽mouse事件（disableMouse: true）解决
