@@ -17,3 +17,11 @@ qq-cft
 
 		modules = (env['MODULES'] || 'zepto event ajax form ie deferred').split(' ')
 
+	然后在此目录下运行
+
+		npm install
+		npm run-script dist
+
+- 运行demo
+
+		grunt serve
