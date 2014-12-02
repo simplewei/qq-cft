@@ -1,4 +1,4 @@
-cft-tuishui
+qq-cft
 ======
 
 - 选择1个本地文件夹
@@ -22,8 +22,9 @@ cft-tuishui
 		npm install
 		npm run-script dist
 
-- 运行demo
 
+- 运行demo
+	添加host  `127.0.0.1	m.tuishui.tenpay.com`
 		grunt serve
 
 
