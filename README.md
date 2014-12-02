@@ -24,7 +24,9 @@ qq-cft
 
 
 - 运行demo
+
 	添加host  `127.0.0.1	m.tuishui.tenpay.com`
+
 		grunt serve
 
 
