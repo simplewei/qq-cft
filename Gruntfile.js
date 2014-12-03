@@ -76,7 +76,7 @@ module.exports = function (grunt) {
       proxypass: {
           proxies: [
               {
-                  // 需反向代理路径
+                  // 需反向代理的路径
                   context: '/cgi-bin',
                   // 退税生产环境ip
                   host: '113.108.1.152'
