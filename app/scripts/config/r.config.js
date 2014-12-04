@@ -1,3 +1,5 @@
+'use strict';
+
 require.config({
   // make components more sensible
   // expose jquery 

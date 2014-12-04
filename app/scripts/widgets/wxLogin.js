@@ -6,6 +6,7 @@
  * author simplewei
  * date 2014-08-30
  */
+'use strict';
 
 define(['zepto', 'queryString'],
     function($, queryString) {

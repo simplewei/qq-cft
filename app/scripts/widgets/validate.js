@@ -1,6 +1,9 @@
 /*
  * 常用校验基础方法
  */
+ 
+'use strict';
+
 define(function() {
 
 	var exports = {};

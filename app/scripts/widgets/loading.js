@@ -1,3 +1,7 @@
+/*
+ * loading 条
+ */
+'use strict';
 define(function(){
 	
 	var exports = {};

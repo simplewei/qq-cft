@@ -24,6 +24,7 @@
 // #define ERR_ACCT_NOWALLET 20002  //没有微信钱包
 // #define ERR_ACCT_NOREG 20003  //账号还未注册
 
+'use strict';
 define(['zepto', 'widgets/prompt', 'widgets/wxLogin'], function($, prompt, wxLogin) {
 
 	$.ajaxSettings.success = function(data) {
@@ -45,7 +46,7 @@ define(['zepto', 'widgets/prompt', 'widgets/wxLogin'], function($, prompt, wxLog
 	};
 
 	$.ajaxSettings.error = function(err) {
-		prompt.error()
+		prompt.error();
 	};
 
 	return $;

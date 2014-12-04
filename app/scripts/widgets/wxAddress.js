@@ -7,6 +7,7 @@
  * author: simplewei
  * date: 2014-10-23
  */
+'use strict';
 
 define(['zepto', './loading'], function($, loading) {
 

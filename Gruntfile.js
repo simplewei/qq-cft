@@ -392,6 +392,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'jshint',
       'configureProxies:proxypass',
       'concurrent:server',
       // 'autoprefixer',

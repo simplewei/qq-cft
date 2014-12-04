@@ -2,7 +2,8 @@
  * 系统提示，替代、拓展原生alert
  *
  */
- 
+'use strict';
+
 define(['zepto', 'underscore'],function($, _){
 	
 	var exports = {};
