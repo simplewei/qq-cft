@@ -76,10 +76,10 @@ module.exports = function (grunt) {
       proxypass: {
           proxies: [
               {
-                  // 需反向代理的路径
+                  // 需反向代理路径
                   context: '/cgi-bin',
                   // 退税生产环境ip
-                  host: '113.108.1.152'
+                  host: '10.133.41.107'
               }
           ]
       },
@@ -111,7 +111,18 @@ module.exports = function (grunt) {
       dist: {
         options: {
           base: '<%= config.dist %>',
-          livereload: false
+          livereload: false,
+          middleware: function (connect, options) {
+              var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;
+              return [
+                  // Include the proxy first
+                  proxy,
+                  // Serve static files.
+                  connect.static(config.dist),
+                  // Make empty directories browsable.
+                  connect.directory(config.dist)
+              ];
+          }
         }
       }
     },
@@ -387,12 +398,12 @@ module.exports = function (grunt) {
       grunt.config.set('connect.options.hostname', '0.0.0.0');
     }
     if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+      return grunt.task.run(['build', 'configureProxies:proxypass', 
+        'connect:dist:keepalive']);
     }
 
     grunt.task.run([
       'clean:server',
-      'jshint',
       'configureProxies:proxypass',
       'concurrent:server',
       // 'autoprefixer',

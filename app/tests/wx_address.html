@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script src="/bower_components/requirejs/require.js"></script>
+		<script type="text/javascript" src="/scripts/config/r.config.js"></script>
+	</head>
+	<body>
+		<script>
+		var appid = 'wx5fb1ba0ffbbde053';
+
+			require(['zepto', 'queryString', 'widgets/wxLogin'],function($, queryString, login){
+				login.login()
+				var urlHash = queryString.parse(location.search.substr(1));
+		        if (urlHash.code) {
+		            return $.ajax({
+		                url: '/cgi-bin/v1.0/addr_token.cgi',
+		                data: {
+		                    url: location.href,
+		                    code: urlHash.code
+		                },
+		                cache: false
+		            }).then(function(data){
+		            	alert(JSON.stringify(data));
+		            	data.scope = 'jsapi_address'
+		            	WeixinJSBridge.invoke("editAddress",
+						// {
+						// 	"appId" : "...",
+						// 	"scope" : "...",
+						// 	"signType" : "SHA1",
+						// 	"addrSign" : "...",
+						// 	"timeStamp" : "...",
+						// 	"nonceStr" : "..."
+						// }
+						data.token, function(res){
+						    alert(res.err_msg);
+						});
+		            })
+		        } else {
+		            top.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + appid + '&redirect_uri=' +
+		                encodeURIComponent(location.href)+ '&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect';
+		        };
+
+				
+			})
+			
+		</script>
+	</body>
+</html>

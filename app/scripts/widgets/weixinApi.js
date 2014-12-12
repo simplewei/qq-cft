@@ -11,10 +11,10 @@
  * 8、关闭公众平台Web页面
  *
  */
-'use strict';
-
 define(function() {
     var WeixinApi = (function() {
+
+        "use strict";
 
         /**
          * 分享到微信朋友圈
