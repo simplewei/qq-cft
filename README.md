@@ -1,4 +1,4 @@
-cft-tuishui
+cft-tuishui -xx
 ======
 
 这是一个基于YEOMAN搭建的系统，并在其基础上增加proxy、requirejs、backbone及集成打包特性，使得requirejs和grunt-rev有机结合。通过下面简单的几步你就可以搭建起整个前端开发系统。
